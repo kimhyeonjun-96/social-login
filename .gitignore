@@ -1,11 +1,16 @@
-HELP.md
+/Users/jjun/Desktop/projects/study/today_algorithm/myCode/src/boj/greedy/mySolution/회의실배정_1931.java
+### IntelliJ IDEA ###
+.idea
+.gitignore
+*.iml
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 .gradle
+application.properties
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
+### Eclipse ###
 .apt_generated
 .classpath
 .factorypath
@@ -17,15 +22,6 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -35,3 +31,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Mac OS ###
+.DS_Store
+
+### 기타 ###
+*.db
+*.svg
