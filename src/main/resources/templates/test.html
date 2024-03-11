@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <div><i th:text="${session.user.email}"></i></div>
+    <div><i th:text="${session.user.oauthType}"></i></div>
+    <input type="button" id="logOutBtn" value="로그아웃">
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script th:inline="javascript">
+    $("#logOutBtn").on('click', function (){
+        $.ajax({
+            type: "POST",
+            url: "/logout",
+            success: function (){
+                alter("로그아웃 되었습니다.")
+                location.replace("/login")
+            }
+        })
+    })
+</script>
+</html>
