@@ -18,11 +18,15 @@
 ### main
 <img width="364" alt="메인" src="https://github.com/kimhyeonjun-96/social-login/assets/69852555/b1e9e68b-7f30-4162-aff7-f5cb8956eeb4">
 
+
 ### 로그인
 <img width="504" alt="카카오로그인" src="https://github.com/kimhyeonjun-96/social-login/assets/69852555/f56cb8ee-9c7a-47ba-a5ef-c08c0a1f3e1b">
+
 
 ### 마이페이지
 <img width="326" alt="마이페이지" src="https://github.com/kimhyeonjun-96/social-login/assets/69852555/b343f1bd-c7a6-42f3-bac8-0f6f6d6b20c5">
 
+
 ### 로그아웃
 <img width="339" alt="로그아웃 후 마이페이지" src="https://github.com/kimhyeonjun-96/social-login/assets/69852555/ec7050aa-b375-47a2-b9e3-e88644ce89fb">
+
