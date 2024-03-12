@@ -21,6 +21,7 @@ public class User {
     protected Long userId;
 
     private String name;
+    private String password;
     private String email;
 
     private String provider;
@@ -28,5 +29,9 @@ public class User {
 
     public void updateEmail(String email) {
         this.email = email;
+    }
+
+    public void updatePassword(String password) {
+        this.password = password;
     }
 }
