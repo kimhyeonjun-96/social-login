@@ -18,6 +18,7 @@ public class UserController {
     public String moveUserPage(@AuthenticationPrincipal PrincipalDetails principalDetails, Model model) {
 
         User user = principalDetails.getUser();
+        System.out.println("moveUserPage = " + user.toString());
         model.addAttribute("user", user);
         return "user";
     }
