@@ -1,6 +1,8 @@
 package kakao.login.config.oauth.provider;
 
 
+import org.springframework.beans.factory.annotation.Value;
+
 import java.util.Map;
 
 public class KakaoUserInfo implements OAuth2UserInfo{

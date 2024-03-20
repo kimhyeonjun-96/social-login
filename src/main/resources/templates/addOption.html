@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <h2>알림을 위해 추가 인증을 진행하셔야 합니다.</h2>
+    <a th:href="'https://kauth.kakao.com/oauth/authorize?client_id='+ ${kakaoApiKey} +'&redirect_uri=http://localhost:8080/setCode&response_type=code&scope=talk_message'">추가 요청하기</a>
+</body>
+</html>

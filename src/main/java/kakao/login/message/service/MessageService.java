@@ -60,6 +60,9 @@ public class MessageService extends HttpCallService {
     }
 
     public boolean sendListMessage(String accessToken, ListMessageDto msgDto) {
+
+        System.out.println("accessToken = " + accessToken);
+
         JSONObject headerLinkObj = new JSONObject();
         headerLinkObj.put("web_url", msgDto.getWebUrl());
         headerLinkObj.put("mobile_web_url", msgDto.getMobileUrl());
@@ -98,7 +101,6 @@ public class MessageService extends HttpCallService {
 
         ResponseEntity<String> response = httpRequest(MSG_SEND_SERVICE_URL, HttpMethod.POST, messageRequestEntity);
         log.info("SendMessageResponse======>{}", response.getBody());
-//        JSONObject jsonData = new JSONObject(response.getBody());
         JSONObject jsonData = new JSONObject(Integer.parseInt(response.getBody()));
         String resultCode = jsonData.get("result_code").toString();
 

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <a href="/oauth2/authorization/kakao">로그인하기</a>
+    <a href="/oauth2/authorization/kakao">카카오 로그인 첫번째</a>
+
+    <div class="text-center">
+        <a href="https://kauth.kakao.com/oauth/authorize"
+           th:href="@{https://kauth.kakao.com/oauth/authorize(client_id=${kakaoApiKey}, redirect_uri=${redirectUri}, response_type='code')}">
+            카카오 로그인 두번째
+        </a>
+    </div>
+
+    <a th:href="'https://kauth.kakao.ecom/oauth/authorize?response_type=code&client_id='+${kakaoApiKey}+'&redirect_uri='+${redirectUri}">카카오 로그인 세번째 </a>
 </body>
 </html>
